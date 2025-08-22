@@ -34,10 +34,14 @@ class TrainingSet {
   final int distance;
   final String type;
   final int rest;
+  final int rounds;
+  final String category; // 'warmup', 'main', 'cooldown'
 
   TrainingSet({
     required this.distance,
     required this.type,
     required this.rest,
+    this.rounds = 1,
+    this.category = 'main',
   });
 }
